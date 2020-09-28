@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".VoiceActivity"
+    android:background="@drawable/buttons">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ForgetPassword"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        style="@style/RipplePink"
+        android:background="@color/white"
+        app:cardCornerRadius="30dp">
+        <Button
+            android:id="@+id/speech_to_text"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:text="speech_to_text"
+            android:textColor="#F62B2B"
+            android:background="@drawable/buttons2"
+            android:textAllCaps="false" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/speech_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp" />
+
+    <Spinner
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:layout_width="212dp"
+        android:layout_height="315dp"
+        >
+
+        <RadioButton
+            android:id="@+id/nameRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:background="@color/white"
+            android:textColor="#F62B2B"/>
+
+        <RadioButton
+            android:id="@+id/brandRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="#F62B2B"
+            android:text="Brand" />
+    </RadioGroup>
+
+</LinearLayout>
